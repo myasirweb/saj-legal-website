@@ -1,0 +1,100 @@
+
+.about-4-logo-shape {
+	right: -19%;
+	left: inherit;
+}
+.about-2-bottom .info-box .info-contnt {
+	margin-right: 0;
+	margin-left: 100px;
+}
+.about-4-right .client-group-wrap {
+	margin-left: 0;
+	margin-right: 60px;
+}
+.process-thumb.process-4-thumb {
+	margin-right: 0;
+}
+.award-brand-thumb {
+	padding-right: 0;
+	margin-left: 40px;
+	padding-left: 40px;
+	border-left: 1px solid rgba(86, 86, 86, 0.3);
+	border-right: 0;
+}
+.slider-4-thumb-box .thumb-slider4 {
+	right: inherit;
+	left: 28px;
+}
+.slider-4-pagination {
+	right: inherit;
+	left: 33px;
+}
+.testi-block.style-2 .testi-icon-2-bottom {
+	left: 0;
+	right: inherit;
+	border-radius: 0px 50px 0px 0;
+}
+
+@media (min-width: 1599px) and (max-width: 1700px) {
+    .hero-style4 .hero-img {
+      left: 6%;
+      right: inherit;
+    }
+}
+
+@media (max-width: 1500px) {
+    .hero-style4 .hero-img {
+      left: 0px;
+      right: inherit;
+    }
+}
+
+@include xl {
+    .hero-style4 .hero-img {
+        left: 100px;
+        right: inherit;
+    }
+}
+
+@include lg {
+    .slider-4-thumb-box .thumb-slider4 {
+        top: auto;
+        bottom: 0;
+        transform: rotate(90deg);
+        left: 0;
+        right: 0;
+        text-align: center;
+        margin: auto;
+        width: 100%;
+    }
+    .slider-4-pagination {
+        top: auto;
+        bottom: 55px;
+        right: 0;
+        left: 0;
+        text-align: center;
+        margin: auto;
+        width: 100%;
+        left: 0px;
+    }
+    .slider-4-thumb-box .thumb-slider4 .tab-btn {
+        -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+        margin-left: 43px;
+    }
+}
+
+
+@include sm {
+    .about-4-right .client-group-wrap {
+        text-align: center;
+        margin: auto;
+    }
+}
+@include xs {
+    .about-2-bottom .info-box .info-contnt {
+        margin-right: 0;
+        margin-left: 0px;
+    }
+}

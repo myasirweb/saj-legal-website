@@ -1,0 +1,161 @@
+.breadcumb-menu {
+    max-width: 100%;
+    padding: 0;
+    margin: 25px 0 -0.5em 0;
+    list-style-type: none;
+    position: relative;
+
+    li {
+        display: inline-block;
+        margin-right: 3px;
+        padding-right: 3px;
+        list-style: none;
+        position: relative;
+
+        &:after {
+            content: "\f054";
+            position: relative;
+            margin-left: 6px;
+            font-weight: 500;
+            font-size: 15px;
+            color: inherit;
+            font-family: $icon-font;
+        }
+
+        &:last-child {
+            padding-right: 0;
+            margin-right: 0;
+            color: $white-color;
+
+            &:after {
+                display: none;
+            }
+        }
+
+        &:first-child {
+
+            &,
+            a,
+            span {
+                color: $white-color;
+
+                &:hover {
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+
+    li,
+    a,
+    span {
+        white-space: normal;
+        color: inherit;
+        word-break: break-word;
+        font-weight: 500;
+        font-size: 16px;
+        color: $white-color;
+    }
+}
+
+.breadcumb-title {
+    margin: -0.20em 0 -0.18em 0;
+    line-height: 1.1;
+    font-size: 64px;
+    font-weight: 600;
+    color: var(--white-color);
+}
+
+@media (min-width: 1300px) {
+    .breadcumb-title {
+        font-size: 64px;
+        line-height: 1.11;
+    }
+}
+
+.breadcumb-wrapper {
+    --space: 160px;
+    padding: calc(var(--space) + 100px) 0 var(--space);
+    text-align: center;
+    position: relative;
+    z-index: 2;
+
+    &::before {
+        z-index: -1;
+    }
+}
+
+
+
+@include xl {
+    .breadcumb-wrapper {
+        --space: 140px;
+        padding: calc(var(--space) + 80px) 0 var(--space);
+
+        .breadcrumb-left {
+            width: 50px;
+            top: 28%;
+        }
+    }
+}
+
+@include lg {
+    .breadcumb-wrapper {
+        --space: 120px;
+        padding: calc(var(--space) + 90px) 0 var(--space);
+    }
+
+    .breadcumb-menu {
+        margin: 15px 0 -0.5em 0;
+
+        li,
+        a,
+        span {
+            font-size: 18px;
+        }
+    }
+
+    .breadcumb-title {
+        font-size: 64px;
+    }
+
+}
+
+@include md {
+    .breadcumb-title {
+        font-size: 48px;
+    }
+    .breadcumb-wrapper {
+        --space: 110px;
+        padding: calc(var(--space) + 90px) 0 var(--space);
+    }
+}
+
+@include sm {
+    .breadcumb-title {
+        font-size: 40px;
+    }
+
+
+    .breadcumb-wrapper {
+        --space: 100px;
+    }
+}
+
+@include xs {
+    .breadcumb-wrapper {
+        --space: 90px;
+        padding: calc(var(--space) + 85px) 0 var(--space);
+
+        .breadcrumb-right {
+            bottom: 15%;
+            left: 50%;
+            width: 39px;
+        }
+    }
+
+    .breadcumb-title {
+        font-size: 34px;
+    }
+}
+

@@ -1,0 +1,132 @@
+/* Feature List ---------------------------------- */
+
+.feature-item {
+    padding: 30px;
+    position: relative;
+    border-radius: 30px;
+    border: 2px solid var(--th-border-color);
+    transition: all 0.4s ease-in-out;
+    transition: .4s;
+    position: relative;
+    z-index: 2;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 100%;
+        background-color: var(--theme-color);
+        -webkit-transition: all 0.4s ease;
+        transition: all 0.4s ease;
+        z-index: -1;
+        border-radius: 30px;
+    }
+
+    .box-title {
+        transition: .4s;
+    }
+
+    &:hover {
+        transform: translateY(-3px);
+
+        &::before {
+            width: 100%;
+        }
+
+        .box-title {
+            color: var(--white-color);
+        }
+
+        .feature-item__icon {
+            border-color: var(--white-color);
+            background: var(--black-color);
+            position: relative;
+            z-index: -1;
+
+            img {
+                filter: brightness(0) invert(1);
+                transform: rotateY(180deg);
+                
+            }
+        }
+
+        .feature-item__icon {
+            color: var(--white-color);
+        }
+
+        .feature-item__text {
+            color: var(--white-color);
+        }
+
+    }
+
+    &__icon {
+        height: 65px;
+        width: 65px;
+        line-height: 65px;
+        text-align: center;
+        border-radius: 50%;
+        box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
+        margin-bottom: 30px;
+        transition: .4s;
+
+        img {
+            margin-top: 11px;
+            margin-left: 24px;
+            transition: all 0.4s ease;
+        }
+    }
+
+    &__text {
+        margin-bottom: -0.3em;
+        transition: .4s;
+    }
+}
+
+
+
+@include lg {
+    .feature-list {
+        &-line {
+            height: 155px;
+        }
+
+        display: block;
+        text-align: center;
+        padding: 15px 5px;
+
+        .box-icon {
+            margin: 0 auto 15px auto;
+        }
+    }
+}
+
+@include md {
+    .feature-list {
+        &-wrap {
+            flex-wrap: wrap;
+            padding: 0;
+            align-items: stretch;
+        }
+
+        &-line {
+            display: none;
+        }
+
+        flex: 50%;
+        padding: 15px 8px;
+
+        &:nth-child(1),
+        &:nth-child(5) {
+            border-right: 1px solid $border-color;
+        }
+
+        &:nth-child(1),
+        &:nth-child(3) {
+            border-bottom: 1px solid $border-color;
+        }
+    }
+}

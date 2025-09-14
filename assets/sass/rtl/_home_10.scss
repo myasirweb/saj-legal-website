@@ -1,0 +1,99 @@
+.choose-4-img-box .img-box1 {
+	margin-right: 0;
+	margin-left: 24px;
+}
+.hero-style10 .hero-img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: inherit;
+}
+.hero-10-circle {
+	top: 44%;
+	right: 43.5%;
+	z-index: 2;
+	left: 42.5%;
+	right: inherit;
+}
+.slider-10-control .slider-4-pagination {
+	text-align: center;
+	width: 80%;
+}
+.slider-10-thumb-box .thumb-slider4 {
+	padding: 0 44px;
+	right: 240px;
+	left: -100px;
+}
+.slider-10-control .slider-4-pagination {
+	width: 78%;
+}
+.slider-10-control .slider-4-pagination button.slider-arrow {
+	margin: 0;
+	margin-right: 130px;
+	margin-left: 120px;
+}
+.hero-style10 .hero-img {
+	mask-image: none !important;
+}
+
+
+@media (max-width: 1800px) {
+    .hero-10-circle {
+        left: 45.5%;
+    }
+    .slider-10-control .slider-4-pagination {
+        width: 77%;
+    }
+}
+
+@media (max-width: 1520px) {
+     .slider-10-control .slider-4-pagination {
+        width: 72%;
+    }
+    .hero-10-circle {
+        left: 42.5%;
+    }
+}
+
+@media (max-width: 1399px) {
+    .slider-10-control .slider-4-pagination {
+        width: 69%;
+    }
+}
+
+@include xl {
+    .slider-10-control .slider-4-pagination {
+        width: 65%;
+    }
+}
+@include lg {
+    .slider-10-thumb-box .thumb-slider4 {
+        padding: 0 44px;
+        right: 0px;
+        left: 0px;
+    }
+    .hero-10-circle {
+        left: 39.5%;
+    }
+}
+
+@include md {
+    .hero-10-circle {
+        right: 42%;
+        top: 60%;
+    }
+    .hero-style10 .hero-img {
+        position: static;
+        width: 100%;
+        right: 0;
+        margin-left: auto;
+        margin-right: au;
+    }
+}
+
+
+
+
+@include vxs {
+
+}

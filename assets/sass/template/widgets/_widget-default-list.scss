@@ -1,0 +1,112 @@
+.widget_nav_menu,
+.widget_meta,
+.widget_pages,
+.widget_archive,
+.widget_categories,
+.wp-block-categories {
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 0 0;
+    }
+
+    a {
+        display: block;
+        background-color: var(--white-color);
+        margin: 0 0 14px;
+        padding: 16px 30px 16px 30px;
+        font-size: 16px;
+        line-height: 1.313;
+        color: var(--body-color);
+        border-radius: 50px;
+        -webkit-transition: 0.4s all ease;
+        transition: 0.4s all ease;
+    }
+
+    li {
+        display: block;
+        position: relative;
+
+        >span {
+            color: var(--title-color);
+            position: absolute;
+            right: 30px;
+            top: 17px;
+            -webkit-transition: all ease 0.4s;
+            transition: all ease 0.4s;
+            pointer-events: none;
+            min-width: 20px;
+            text-align: right;
+        }
+    }
+
+    .menu,
+    >ul {
+        >li {
+            &:last-child {
+                >a {
+                    border-bottom: none;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    a {
+        &:hover {
+            color: $white-color;
+            background-color: $theme-color;
+
+            ~span {
+                color: $white-color;
+            }
+        }
+    }
+
+    .sub-menu,
+    .children {
+        margin-left: 10px;
+    }
+}
+
+.wp-block-categories {
+    list-style: none;
+    padding: 0;
+
+    >li {
+        &:last-child {
+            >a {
+                margin-bottom: none;
+            }
+        }
+    }
+}
+
+.widget_nav_menu,
+.widget_meta,
+.widget_pages {
+    a {
+        padding-right: 20px;
+    }
+}
+
+.widget_nav_menu {
+    .sub-menu {
+        margin-left: 10px;
+    }
+}
+
+.wp-block-archives {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+
+    a:not(:hover) {
+        color: inherit;
+    }
+}
+
+.th-blog ul.wp-block-archives li {
+    margin: 5px 0;
+}

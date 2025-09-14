@@ -1,0 +1,208 @@
+/* Process box 1---------------------------------- */
+.process-thumb {
+    border-radius: 24px;
+    margin-left: -240px;
+
+    .img-box1 {
+        position: relative;
+        @include lg {
+            width: 100%;
+        }
+    }
+
+    img {
+        border-radius: 24px;
+        @include lg {
+            width: 100%;
+        }
+    }
+
+    @include lg {
+        margin-left: 0;
+    }
+}
+
+.process-thumb .video-container {
+    border-radius: 24px;
+
+    video {
+        border-radius: 24px;
+        height: 100%;
+    }
+}
+
+.process-bottom-item {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 12px;
+    position: relative;
+    &:last-child:before {
+        display: none;
+    }
+    &::before {
+        position: absolute;
+        left: 27px;
+        width: 1px;
+        height: 104%;
+        border-right: 2px dashed var(--theme-color);
+        content: "";
+        top: 13px;
+        z-index: -1;
+        @include vxs {
+            display: none;
+        }
+    }
+
+    @include vxs {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &:hover .process-bottom-item__icon img {
+        transform: rotateY(180deg);
+    }
+
+    &__icon {
+        height: 56px;
+        width: 56px;
+        line-height: 56px;
+        text-align: center;
+        background: var(--theme-color);
+        border-radius: 50%;
+
+        img {
+            transition: all 0.4s ease;
+        }
+    }
+
+    &__content {
+        flex: 1;
+
+        .box-title {
+            font-size: 30px;
+            margin-bottom: 7px;
+
+            @include lg {
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+
+/* Process box 2---------------------------------- */
+.process-box.style-2 {
+    text-align: center;
+    padding: 0 22px;
+    position: relative;
+    transition: .4s;
+
+    &:before {
+        width: 300px;
+        position: absolute;
+        content: '';
+        border-top: 2px dashed var(--theme-color2);
+        top: 104px;
+        right: -190px;
+        z-index: -1;
+
+        @include md {
+            display: none;
+        }
+    }
+
+    .box-icon {
+        height: 220px;
+        width: 220px;
+        line-height: 200px;
+        text-align: center;
+        background: var(--theme-color2);
+        border-radius: 100%;
+        margin: 0 auto 30px;
+        position: relative;
+        border: 11px solid var(--white-color);
+
+        &::before {
+            content: '';
+            width: 220px;
+            height: 220px;
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            border: 2px dashed var(--theme-color);
+            border-radius: inherit;
+        }
+
+        .number {
+            position: absolute;
+            display: block;
+            right: 0;
+            width: 58px;
+            height: 58px;
+            background: var(--theme-color);
+            border-radius: 50%;
+            line-height: 58px;
+            color: var(--white-color);
+            font-size: 30px;
+            border: 2px solid transparent;
+            font-weight: 500;
+            transition: .4s;
+            display: block;
+        }
+    }
+
+    .box-title {
+        font-size: 30px;
+        margin-bottom: 12px;
+
+        @include sm {
+            font-size: 24px;
+        }
+    }
+
+    &:hover {
+        .box-icon .number {
+            background: var(--theme-color2);
+            border-color: var(--white-color);
+        }
+
+        .box-icon::before {
+            animation: spin 10s linear infinite;
+        }
+    }
+}
+
+.col-xl-4:last-child .process-box.style-2:before {
+    display: none;
+}
+
+.process-box.style-2:hover .box-icon img {
+    transform: rotateY(-180deg);
+}
+
+
+/* Process Card 3 ---------------------------------- */
+.process-box.style-2.theme-3 {
+    &:before {
+        z-index: 1;
+        border-top: 2px dashed var(--theme-color);
+    }
+
+    .box-icon {
+        z-index: 2;
+        border: 10px solid #242c2e;
+        background: var(--black-color);
+
+        &::before {
+            border-color: var(--theme-color);
+        }
+
+        .number {
+            background: var(--theme-color);
+        }
+    }
+
+    &:hover .box-icon .number {
+        background: var(--theme-color);
+    }
+}

@@ -1,0 +1,41 @@
+.hero-style6 .hero-img {
+	left: 6%;
+	right: inherit;
+}
+.about7-left {
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-left: 0;
+}
+
+@include ml {
+     .hero-style6 .hero-img {
+        left: 1%;
+        right: inherit;
+    }
+}
+
+@include xl {
+
+}
+
+@include lg {
+}
+
+@include md {
+}
+
+@include sm {
+    .about7-left {
+        margin-right: 0px;
+        margin-left: 0;
+    }
+}
+
+@include xs {
+
+}
+
+@include vxs {
+
+}

@@ -1,0 +1,15 @@
+.img-box8 .img2 {
+	left: 10px;
+	right: inherit;
+}
+
+@media (max-width: 1500px) {
+    .hero-8-wrapper .hero-img {
+      left: 15px;
+      right: inherit;
+    }
+}
+
+@include vxs {
+
+}

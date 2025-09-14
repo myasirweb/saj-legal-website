@@ -1,0 +1,475 @@
+// Primary Button
+.th-btn {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+    border: none;
+    text-transform: capitalize;
+    text-align: center;
+    background-color: var(--theme-color);
+    color: var(--white-color);
+    font-family: var(--body-font);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+    padding: 21px 42px;
+    min-width: 170px;
+    border-radius: 30px;
+    transition: all 1s cubic-bezier(0.05, 0.83, 0.43, 0.96);
+
+    &:before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        top: 0;
+        left: 0;
+        width: 0%;
+        background-color: var(--white-color);
+        z-index: -1;
+        transition: all 0.4s ease-out;
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        height: 100%;
+        top: 0;
+        width: 0%;
+        right: 0;
+        background-color: var(--white-color);
+        z-index: -1;
+        transition: all 0.4s ease-out;
+    }
+
+
+    i {
+        font-size: 0.95em;
+        margin-left: 6px;
+    }
+
+    &:hover,
+    &.active {
+        &::before {
+            width: 51%;
+            border-radius: 0;
+        }
+
+        &::after {
+            width: 50%;
+            border-radius: 0;
+        }
+
+        color: var(--title-color);
+        box-shadow: none;
+    }
+
+    &.style2 {
+        background-color: var(--theme-color2);
+
+        &:hover {
+            color: var(--white-color);
+
+            &:before,
+            &:after {
+                background-color: var(--theme-color);
+            }
+        }
+    }
+
+    &.style3 {
+        background-color: transparent;
+        color: var(--white-color);
+        border: 1px solid var(--white-color);
+        padding: 20px 42px;
+
+        &:hover {
+            color: $title-color;
+        }
+
+
+    }
+
+
+    &.style4 {
+        color: $white-color;
+        box-shadow: none;
+        transition: all 1s cubic-bezier(0.05, 0.83, 0.43, 0.96);
+
+        &:before {
+            content: "";
+            position: absolute;
+            height: 100%;
+            top: 0;
+            left: 0;
+            width: 0%;
+            background-color: var(--theme-color2);
+            z-index: -1;
+            transition: all 0.4s ease-out;
+        }
+    
+        &:after {
+            content: "";
+            position: absolute;
+            height: 100%;
+            top: 0;
+            width: 0%;
+            right: 0;
+            background-color: var(--theme-color2);
+            z-index: -1;
+            transition: all 0.4s ease-out;
+        }
+    
+
+        &:hover{
+            &::before {
+                width: 50%;
+                border-radius: 0;
+            }
+    
+            &::after {
+                width: 50%;
+                border-radius: 0;
+            }
+            box-shadow: none;
+        }
+    
+    }
+
+    &.style5 {
+        background-color: $theme-color;
+        color: $white-color;
+
+        &:hover {
+            color: $theme-color;
+
+            &:before,
+            &:after {
+                background-color: $white-color;
+            }
+        }
+    }
+
+    &.style6 {
+        background-color: $title-color;
+
+        &:hover {
+            color: $theme-color;
+
+            &:before,
+            &:after {
+                background-color: $white-color;
+            }
+        }
+    }
+
+    &.btn-fw {
+        width: 100%;
+
+        &:before,
+        &:after {
+            display: none;
+        }
+
+        &:hover {
+            background-color: $title-color;
+        }
+    }
+
+    &.btn-sm {
+        padding: 16px 25px;
+        min-width: 152px;
+    }
+}
+
+// Icon Btn
+.icon-btn {
+    display: inline-block;
+    width: var(--btn-size, 56px);
+    height: var(--btn-size, 56px);
+    line-height: var(--btn-size, 54px);
+    font-size: var(--btn-font-size, 18px);
+    // background-color: var(--icon-bg, #f7f7f7);
+    color: $title-color;
+    text-align: center;
+    border-radius: 0;
+    border: 1px solid $border-color;
+    transition: 0.4s ease-in-out;
+    position: relative;
+    background-color: transparent;
+
+    &:hover {
+        background-color: $theme-color;
+        color: $white-color;
+        border-color: $theme-color;
+    }
+
+    &.style2 {
+        background-color: $theme-color;
+        color: $white-color;
+        border: none;
+        border-radius: 99px;
+
+        &:hover {
+            background-color: $theme-color2;
+        }
+    }
+}
+
+.th-btn.btn-bg-theme-3 {
+    background: var(--theme-color3);
+    box-shadow: var(--theme-color3) 0px 3px 8px -2px;
+}
+
+.th-btn.btn-bg-theme-2 {
+    background: var(--theme-color2);
+    box-shadow: var(--theme-color2) 0px 3px 8px -2px;
+    color: var(--title-color);
+}
+
+// Play Button
+.play-btn {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+
+    >i {
+        display: inline-block;
+        width: var(--icon-size, 100px);
+        height: var(--icon-size, 100px);
+        line-height: var(--icon-size, 100px);
+        text-align: center;
+        background-color: transparent;
+        color: var(--white-color);
+        font-size: var(--icon-font-size, 1.4em);
+        border-radius: 50%;
+        z-index: 1;
+        transition: all ease 0.4s;
+        border: 3px solid var(--white-color);
+    }
+
+    &:after,
+    &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: $white-color;
+        @extend .ripple-animation;
+        z-index: -1;
+        border-radius: 50%;
+        transition: all ease 0.4s;
+    }
+
+    &:after {
+        animation-delay: 2s;
+    }
+
+    &:hover {
+
+        &:after,
+        &::before,
+        i {
+            background-color: $theme-color;
+            color: $white-color;
+        }
+    }
+
+    &.style2 {
+        i {
+            font-size: var(--icon-font-size, 2.4em);
+        }
+
+        &:before,
+        &:after {
+            background-color: transparent;
+            border: 3px solid $white-color;
+        }
+    }
+
+    &.style3 {
+        >i {
+            --icon-size: 40px;
+            font-size: 14px;
+            border: 1px solid;
+            background-color: $theme-color;
+            color: $white-color;
+        }
+
+        &:before,
+        &:after {
+            background-color: $white-color;
+        }
+
+        &:hover {
+            >i {
+                background-color: $white-color;
+                color: $theme-color;
+            }
+
+            &:before,
+            &:after {
+                background-color: $white-color;
+            }
+        }
+    }
+}
+
+// Link Button
+.link-btn {
+    font-weight: 500;
+    font-size: 14px;
+    display: flex;
+    line-height: 0.8;
+    position: relative;
+    padding-bottom: 2px;
+    margin-bottom: -2px;
+    text-transform: capitalize;
+    color: var(--title-color);
+    align-items: center;
+    gap: 7px;
+
+    i {
+        margin-left: 1px;
+        font-size: 15px;
+        transition: auto;
+        margin-bottom: -2px;
+    }
+
+    // &:before {
+    //     content: "";
+    //     position: absolute;
+    //     left: 0;
+    //     bottom: 0;
+    //     width: 100%;
+    //     height: 1px;
+    //     background-color: $title-color;
+    //     transition: all ease 0.4s;
+    // }
+
+    &:hover {
+        color: $theme-color;
+
+        &::before {
+            width: 0%;
+        }
+    }
+}
+
+.line-btn {
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-block;
+    line-height: 0.8;
+    position: relative;
+    padding-bottom: 4px;
+    margin-bottom: -1px;
+    text-transform: uppercase;
+    color: $title-color;
+
+    i {
+        margin-left: 5px;
+        font-size: 0.9rem;
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 1px;
+        background-color: $title-color;
+        transition: all ease 0.4s;
+    }
+
+    &:hover {
+        color: $theme-color;
+
+        &::before {
+            background-color: $theme-color;
+            width: 45px;
+        }
+    }
+}
+.link-btn.style-2 {
+	color: var(--theme-color);
+    &:hover {
+        color: var(--white-color);
+    }
+}
+
+// Scroll To Top
+.scroll-top {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    display: block;
+    border-radius: 50px;
+    z-index: 10000;
+    opacity: 1;
+    visibility: hidden;
+    transform: translateY(45px);
+    transition: all 300ms linear;
+
+    &:after {
+        content: "\f062";
+        font-family: $icon-font;
+        position: absolute;
+        text-align: center;
+        line-height: 50px;
+        font-size: 20px;
+        color: $theme-color;
+        left: 0;
+        top: 0;
+        height: 50px;
+        width: 50px;
+        cursor: pointer;
+        display: block;
+        z-index: 1;
+        border: 2px solid $theme-color;
+        box-shadow: none;
+        border-radius: 50%;
+    }
+
+    svg {
+        color: $theme-color;
+        border-radius: 50%;
+        background: $white-color;
+
+        path {
+            fill: none;
+        }
+    }
+
+    .progress-circle path {
+        stroke: $theme-color;
+        stroke-width: 20px;
+        box-sizing: border-box;
+        transition: all 400ms linear;
+    }
+
+    &.show {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+}
+
+// theme-icon
+.theme-icon{
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: var(--white-color);
+    background: var(--theme-color);
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
