@@ -30,5 +30,4 @@ Our website showcases our practice areas, team of qualified lawyers, and client 
 
 ---
 
-## 📂 Repository Structure
 
