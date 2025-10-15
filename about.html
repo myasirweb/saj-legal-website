@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>About Us - SAJ Legal</title>
+    <link rel="canonical" href="https://saj.legal/about.html" />
     <meta name="author" content="SAJ Legal" />
     <meta
       name="description"
@@ -22,6 +23,54 @@
     <meta name="msapplication-TileColor" content="#ffffff" />
     <!-- SAJ Favicon -->
     <link rel="icon" href="assets/img/favicons/FAV.svg" type="image/png" />
+
+    <!-- Schema Markup for About Us Page -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        "name": "About Us - S A J Legal",
+        "description": "Learn more about S A J Legal, London-based solicitors specializing in immigration law, providing expert legal advice and representation.",
+        "url": "https://saj.legal/about.html",
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://saj.legal/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "About Us",
+              "item": "https://saj.legal/about.html"
+            }
+          ]
+        },
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "S A J Legal",
+          "url": "https://saj.legal/"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "S A J Legal",
+          "url": "https://saj.legal/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://saj.legal/assets/img/logo.png"
+          },
+          "sameAs": [
+            "https://www.facebook.com/sajlegal",
+            "https://www.linkedin.com/company/sajlegal",
+            "https://twitter.com/sajlegal"
+          ]
+        }
+      }
+    </script>
+
     <!--==============================
 	  Google Fonts
 	============================== -->
@@ -45,6 +94,20 @@
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
     <!-- Theme Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-9CH76D5FY0"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-9CH76D5FY0");
+    </script>
   </head>
 
   <body class="">
@@ -58,7 +121,7 @@
       <div class="preloader-inner">
         <img
           src="assets/img/loader/sajloader.gif"
-          alt="Loading..."
+          alt="saj legal solicitor logo"
           class="loader-gif"
         />
       </div>
@@ -168,7 +231,10 @@
               <div class="shape-mockup logo-shape">
                 <div class="logo-icon-wrap">
                   <h4 class="logo-icon">
-                    <img src="assets/img/icon/logo-icon-white.png" alt="img" />
+                    <img
+                      src="assets/img/icon/logo-icon-white.png"
+                      alt="best lawyers for you - icon"
+                    />
                   </h4>
                   <div class="logo-icon-wrap__text bg-theme2">
                     <span class="logo-animation">Best Lawyer For You</span>
@@ -179,7 +245,7 @@
                 <img
                   class="tilt-active"
                   src="assets/img/about/about-1-left.jpg"
-                  alt="Image"
+                  alt="immigration lawyers in london england"
                 />
               </div>
               <div class="img2">
@@ -187,14 +253,14 @@
                   <img
                     class="tilt-active"
                     src="assets/img/about/about-1.jpg"
-                    alt="Image"
+                    alt="uk immigration solicitors"
                   />
                 </div>
                 <div class="img2-bottom">
                   <img
                     class="tilt-active"
                     src="assets/img/about/about-1-right-2.jpg"
-                    alt="Image"
+                    alt="immigration attorney london"
                   />
                 </div>
               </div>
@@ -279,7 +345,7 @@
         >
           <div class="col-lg-7 col-md-8">
             <div class="title-area text-center text-lg-start">
-              <span class="sub-title">Our Services</span>
+              <span class="sub-title">Our Legal Services</span>
               <h2 class="sec-title">Your Legal Solutions</h2>
             </div>
           </div>
@@ -480,9 +546,9 @@
             <div class="title-area process-3-title-box">
               <span
                 class="sub-title justify-content-center justify-content-xl-start"
-                >Schedule Consultation</span
+                >Book Your Consultation</span
               >
-              <h2 class="sec-title mb-2">Schedule A Free Consultation</h2>
+              <h2 class="sec-title mb-2">Consult a Legal Professional</h2>
               <p class="box-text">
                 At SAJ Legal, we are committed to offering strategic legal
                 guidance tailored to your needs. Book a no-obligation
@@ -554,35 +620,35 @@
             <img
               src="assets/img/awards/E2-Media-7-300x300.jpg"
               class="img-fluid"
-              alt="Award 1"
+              alt="S.A.J Legal Solicitors Award of Excellence for Niche Legal Services 2023 by E2 Media"
             />
           </div>
           <div style="width: 18%">
             <img
               src="assets/img/awards/businesslegalaward.png"
               class="img-fluid"
-              alt="Award 2"
+              alt="S.A.J Legal awarded Paralegal Team of the Year 2023 at UK Business Awards"
             />
           </div>
           <div style="width: 18%">
             <img
               src="assets/img/awards/uklegaaward.jpg"
               class="img-fluid"
-              alt="Award 3"
+              alt="S.A.J Legal named Best Solution-Orientated Public Law Firm 2023 in Greater London by SME News"
             />
           </div>
           <div style="width: 18%">
             <img
               src="assets/img/awards/legalaward.png"
               class="img-fluid"
-              alt="Award 4"
+              alt="S.A.J Legal awarded TMT Legal Team of the Year 2023 at UK Business Awards"
             />
           </div>
           <div style="width: 18%">
             <img
               src="assets/img/awards/Saj-Legal-Solicitors.png"
               class="img-fluid"
-              alt="Award 5"
+              alt="S.A.J Legal Solicitors recognized as Best Solution-Driven Law Firm of the Year 2023 in Central London by SME News"
             />
           </div>
         </div>
@@ -597,15 +663,43 @@
               <div class="widget widget_nav_menu footer-widget">
                 <h3 class="widget_title">Quick Links</h3>
                 <div class="menu-all-pages-container">
-                  <ul class="menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="service.html">Our Services</a></li>
-                    <li><a href="team.html">Our Team</a></li>
-                    <li><a href="careers.html">Careers</a></li>
-                    <li><a href="pricing.html">Pricing</a></li>
-                    <li><a href="journal.html">Journal</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
+                  <ul class="menu space-y-2">
+                    <li>
+                      <a href="index.html" class="flex items-center"
+                        ><span style="color: #b58c5a; margin-right: 8px">→</span
+                        ><span>Home</span></a
+                      >
+                    </li>
+                    <li>
+                      <a href="about.html" class="flex items-center"
+                        ><span style="color: #b58c5a; margin-right: 8px">→</span
+                        ><span>About Us</span></a
+                      >
+                    </li>
+                    <li>
+                      <a href="service.html" class="flex items-center"
+                        ><span style="color: #b58c5a; margin-right: 8px">→</span
+                        ><span>Our Services</span></a
+                      >
+                    </li>
+                    <li>
+                      <a href="team.html" class="flex items-center"
+                        ><span style="color: #b58c5a; margin-right: 8px">→</span
+                        ><span>Our Team</span></a
+                      >
+                    </li>
+                    <li>
+                      <a href="careers.html" class="flex items-center"
+                        ><span style="color: #b58c5a; margin-right: 8px">→</span
+                        ><span>Careers</span></a
+                      >
+                    </li>
+                    <li>
+                      <a href="contact.html" class="flex items-center"
+                        ><span style="color: #b58c5a; margin-right: 8px">→</span
+                        ><span>Contact Us</span></a
+                      >
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -615,82 +709,62 @@
               <div class="widget widget_nav_menu footer-widget">
                 <h3 class="widget_title">Our Practice Areas</h3>
                 <div class="menu-all-pages-container">
-                  <ul class="menu">
+                  <ul class="menu space-y-2">
                     <li>
                       <a
                         href="./servicedetail/civil-litigation-dispute-resolution.html"
-                        >Civil Litigation</a
+                        class="flex items-center"
                       >
+                        <span style="color: #b58c5a; margin-right: 8px">→</span>
+                        <span>Civil Litigation</span>
+                      </a>
                     </li>
                     <li>
-                      <a href="./servicedetail/family-law-solicitors.html"
-                        >Family Law</a
+                      <a
+                        href="./servicedetail/family-law-solicitors.html"
+                        class="flex items-center"
                       >
+                        <span style="color: #b58c5a; margin-right: 8px">→</span>
+                        <span>Family Law</span>
+                      </a>
                     </li>
                     <li>
-                      <a href="./servicedetail/international-law.html"
-                        >International Law</a
+                      <a
+                        href="./servicedetail/international-law.html"
+                        class="flex items-center"
                       >
+                        <span style="color: #b58c5a; margin-right: 8px">→</span>
+                        <span>International Law</span>
+                      </a>
                     </li>
                     <li>
-                      <a href="./servicedetail/immigration-law-solicitors.html"
-                        >Immigration Law</a
+                      <a
+                        href="./servicedetail/immigration-law-solicitors.html"
+                        class="flex items-center"
                       >
+                        <span style="color: #b58c5a; margin-right: 8px">→</span>
+                        <span>Immigration Law</span>
+                      </a>
                     </li>
                     <li>
-                      <a href="./servicedetail/public-law-judicial-review.html"
-                        >Public Law</a
+                      <a
+                        href="./servicedetail/public-law-judicial-review.html"
+                        class="flex items-center"
                       >
+                        <span style="color: #b58c5a; margin-right: 8px">→</span>
+                        <span>Public Law</span>
+                      </a>
                     </li>
                     <li>
-                      <a href="./complaints-policy.html">Complaints Policy</a>
+                      <a
+                        href="./complaints-policy.html"
+                        class="flex items-center"
+                      >
+                        <span style="color: #b58c5a; margin-right: 8px">→</span>
+                        <span>Complaints Policy</span>
+                      </a>
                     </li>
                   </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-6 col-xl-4 footer-border-right">
-              <div class="widget footer-widget text-xl-center text-start">
-                <div class="th-widget-about">
-                  <!-- logo -->
-                  <div class="about-logo">
-                    <img
-                      src="assets/img/logo/SAJ-LOGO-White.svg"
-                      alt="Description"
-                      class="img-fluid"
-                      style="width: 150px; height: 150px"
-                    />
-                  </div>
-
-                  <!-- TrustPilot Image -->
-                  <div class="th-social-image my-3">
-                    <a
-                      href="https://www.trustpilot.com/review/saj.legal"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <img
-                        src="assets/img/awards/Trustpilot-3.jpg"
-                        alt="Trustpilot"
-                        class="img-fluid"
-                      />
-                    </a>
-                  </div>
-
-                  <!-- Social Icons -->
-                  <div class="th-social">
-                    <a href="https://www.facebook.com/sajlegal"
-                      ><i class="fab fa-facebook-f"></i
-                    ></a>
-                    <a href="https://www.instagram.com/sajlegalsolicitors/">
-                      <i class="fab fa-instagram"></i>
-                    </a>
-
-                    <a href="https://www.linkedin.com/company/s-a-j-legal/"
-                      ><i class="fab fa-linkedin-in"></i
-                    ></a>
-                  </div>
                 </div>
               </div>
             </div>
@@ -709,26 +783,25 @@
                       </p>
                     </div>
                   </div>
+
                   <div class="info-box">
                     <div class="info-box_icon">
                       <i class="fa-regular fa-phone"></i>
                     </div>
-
                     <div class="info-contnt">
                       <h4 class="footer-info-title">Phone</h4>
-
                       <p class="info-box_text">
-                        <a href="tel:+0207 112 4946" class="info-box_link"
+                        <a href="tel:+02071124946" class="info-box_link"
                           >0207 112 4946</a
                         >
                       </p>
                     </div>
                   </div>
+
                   <div class="info-box">
                     <div class="info-box_icon">
                       <i class="fa-regular fa-envelope"></i>
                     </div>
-
                     <div class="info-contnt">
                       <h4 class="footer-info-title">Email</h4>
                       <p class="info-box_text">
@@ -738,12 +811,71 @@
                       </p>
                     </div>
                   </div>
+                  <!-- Social Icons -->
+                  <div class="th-social">
+                    <a href="https://www.facebook.com/sajlegal"
+                      ><i class="fab fa-facebook-f"></i
+                    ></a>
+                    <a href="https://www.instagram.com/sajlegalsolicitors/">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/company/s-a-j-legal/"
+                      ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-xl-4 footer-border-right">
+              <div class="widget footer-widget text-start">
+                <div class="th-widget-about">
+                  <div class="about-logo">
+                    <img
+                      src="assets/img/logo/SAJ-LOGO-White.svg"
+                      alt="SAJ-LEGAL"
+                      class="img-fluid"
+                      style="width: 150px; height: 150px"
+                    />
+                  </div>
+                  <div style="display: block">
+                    <div style="text-align: left">
+                      <div class="">
+                        <a
+                          href="https://www.trustpilot.com/review/saj.legal"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <img
+                            src="assets/img/awards/Trustpilot-3.jpg"
+                            alt="Highly rated company on Trustpilot based on customer reviews"
+                            style="height: 120px; width: 295px"
+                          />
+                        </a>
+                      </div>
+                      <div class="my-3">
+                        <a
+                          href="https://www.reviewsolicitors.co.uk/london/london/s-a-jamali--co-ltd"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <img
+                            src="assets/img/awards/reviewsolicitor.jpg"
+                            alt="Rated on ReviewSolicitors"
+                            style="height: 120px; width: 295px"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
       <div class="copyright-wrap">
         <div class="container">
           <div class="row gy-2 align-items-center">

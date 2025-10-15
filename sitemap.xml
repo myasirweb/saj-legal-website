@@ -46,11 +46,6 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://saj.legal/blog.html</loc>
-  <lastmod>2025-07-02T06:50:10+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
   <loc>https://saj.legal/contact.html</loc>
   <lastmod>2025-07-02T07:00:18+00:00</lastmod>
   <priority>0.80</priority>
@@ -150,16 +145,4 @@
   <lastmod>2025-07-28T06:50:38+00:00</lastmod>
   <priority>0.64</priority>
 </url>
-<url>
-  <loc>https://saj.legal/blog-details.html</loc>
-  <lastmod>2025-06-29T00:34:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://saj.legal/testimonials.html</loc>
-  <lastmod>2025-07-02T06:45:38+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-
-
 </urlset>
