@@ -7439,6 +7439,50 @@ ol.wp-block-rss {
   color: var(--theme-color);
 }
 
+/* --- SRA Badge Wrapper --- */
+.sra-badge {
+  max-width: 250px;         
+  margin-top: 5px;           
+  text-align: left;
+}
+
+/* --- Image Styling --- */
+.sra-badge {
+  max-width: 250px;
+  margin-top: 10px;
+  text-align: left;
+}
+
+.sra-badge-img {
+  width: 250px;
+  height: 150px;
+  border-radius: 4px;
+  object-fit: contain;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .sra-badge {
+    max-width: 200px;
+    margin: 10px auto;
+    text-align: center;
+  }
+
+  .sra-badge-img {
+    width: 200px;
+    height: auto;
+  }
+}
+
+
+
+.th-social {
+  margin-top: 10px; 
+}
+
+
+
+
 /* footer 3 ---------------------------------- */
 .footer-layout1.style-2 {
   background-color: #070707;

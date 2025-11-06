@@ -38,7 +38,7 @@
  $(window).on("load", function () {
   setTimeout(function () {
     $(".preloader").fadeOut();
-  }, 100); // wait 500ms so GIF is visible
+  }, 0); // wait 500ms so GIF is visible
 });
 
 
