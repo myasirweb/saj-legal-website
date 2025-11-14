@@ -5247,6 +5247,12 @@ ol.wp-block-rss {
   color: #99a4a3;
 }
 
+.badge-img {
+  height: 80px;
+  width: 180px;
+  object-fit: contain;
+}
+
 /* Extra small devices */
 @media (max-width: 575px) {
   .col-md-6:last-child .newsletter-widget {
