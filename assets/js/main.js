@@ -35,22 +35,28 @@
     /*
 
   /*---------- 01. On Load Function ----------*/
- $(window).on("load", function () {
-  setTimeout(function () {
-    $(".preloader").fadeOut();
-  }, 0); // wait 500ms so GIF is visible
+$(window).on("load", function () {
+    // If screen width is less than 768px (mobile)
+    if ($(window).width() < 768) {
+        $(".preloader").hide(); // don't show loader
+        return;
+    }
+
+    // Desktop behavior (show loader)
+    setTimeout(function () {
+        $(".preloader").fadeOut();
+    }, 0);
 });
 
-
-    /*---------- 02. Preloader ----------*/
-    if ($(".preloader").length > 0) {
-        $(".preloaderCls").each(function () {
-            $(this).on("click", function (e) {
-                e.preventDefault();
-                $(".preloader").css("display", "none");
-            });
+/*---------- 02. Preloader Close ----------*/
+if ($(".preloader").length > 0) {
+    $(".preloaderCls").each(function () {
+        $(this).on("click", function (e) {
+            e.preventDefault();
+            $(".preloader").css("display", "none");
         });
-    }
+    });
+}
 
     /*---------- 03. Mobile Menu ----------*/
     $.fn.thmobilemenu = function (options) {
