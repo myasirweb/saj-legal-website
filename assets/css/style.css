@@ -8892,7 +8892,7 @@ ul.comment-list .th-comment-item:has(.children) .th-post-comment {
 
 .th-hero-bg {
   position: relative;
-  background-image: url('assets/img/bg/hero_bg_1_1.jpg');
+  background-image: url('assets/img/bg/hero-bg.webp');
   background-size: cover;
   background-position: center;
   overflow: hidden;
