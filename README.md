@@ -1,33 +1,77 @@
-# SAJ Legal – Professional Legal Services Website
+# ⚖️ SAJ Legal — Legal Services Website
 
-Welcome to the official GitHub repository for **SAJ Legal**, a professional law firm offering expert legal services. This repository contains the source code and assets for the [SAJ Legal website](https://saj.legal/).
+A professional, responsive website built for **SAJ Legal**, a law firm offering legal services and consultancy. Designed and developed solo from client brief to deployment, with a focus on clean UI, SEO optimization, and cross-browser compatibility.
 
----
-
-## 🏛 About SAJ Legal
-
-**SAJ Legal** is a full-service law firm providing high-quality legal representation and consultancy. We specialize in delivering strategic and tailored legal solutions to individuals, businesses, and organizations.
-
-Our website showcases our practice areas, team of qualified lawyers, and client resources to ensure transparency and easy access to legal information.
+🔗 **Live Site:** [sajlegal.com](https://sajlegal.com)
 
 ---
 
-## 🌐 Website Features
+## ✨ Features
 
-- **Responsive Design:** Optimized for mobile, tablet, and desktop viewing.  
-- **SEO-Optimized Structure:** Clean URLs, meta descriptions, and keyword-rich content.  
-- **Clear Navigation:** Easy access to Practice Areas, About Us, Team, and Contact pages.  
-- **Client-Friendly Content:** Informative sections on services, legal insights, and news.  
-- **Fast & Secure:** Lightweight codebase with HTTPS support.
-
----
-
-## ⚙️ Technology Stack
-
-- **Frontend:** HTML5, CSS3, JavaScript (or React/Next.js if applicable)  
-- **Frameworks/Libraries:** (List the ones used – e.g. Bootstrap, Tailwind CSS)  
-- **Hosting & Domain:** [saj.legal](https://saj.legal/) on (Hosting Provider)  
+- Fully responsive design — mobile, tablet & desktop
+- Clean, professional UI tailored to legal industry standards
+- SEO optimized — meta tags, semantic HTML, Open Graph
+- Practice areas & services section
+- Team/attorneys profile section
+- Contact form with client inquiry flow
+- Cross-browser compatible
+- Fast load times — performance optimized
 
 ---
 
+## 🧰 Tech Stack
 
+| Layer | Technology |
+|-------|-----------|
+| **Framework** | Next.js |
+| **Markup** | HTML5 |
+| **Styling** | CSS3, Tailwind CSS |
+| **Scripting** | JavaScript (ES6+) |
+| **SEO** | Next.js Head, Meta Tags, Open Graph |
+| **Deployment** | Vercel |
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js >= 16
+- npm >= 8
+
+### Installation
+
+```bash
+git clone https://github.com/myasirweb/saj-legal-website.git
+cd saj-legal-website
+npm install
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+---
+
+## 📁 Project Structure
+
+```
+saj-legal-website/
+├── components/       # Reusable UI components
+├── pages/            # Next.js pages & routing
+├── public/           # Static assets
+├── styles/           # Global styles
+└── package.json
+```
+
+
+## 👨‍💻 Author
+
+**Muhammad Yasir** — Frontend Engineer
+🌐 [yasir-portfolio-nextjs.vercel.app](https://yasir-portfolio-nextjs.vercel.app)
+💼 [linkedin.com/in/yasirweb](https://linkedin.com/in/yasirweb)
+📧 muhammad.yasir1368@gmail.com
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
