@@ -1,0 +1,37 @@
+.blog-meta {
+    span,
+    a {
+        margin-left: 15px;
+        margin-right: 0;
+        i {
+            margin-left: 10px;
+            margin-right: 0;
+        }
+        &:last-child {
+            margin-left: 0;
+            padding-left: 0;
+            &:before {
+                display: none;
+            }
+        }
+    }
+    .author {
+        img {
+            margin-left: 6px;
+            margin-right: 0;
+        }
+    }
+}
+.blog-meta a:first-child:before {
+    display: none;
+}
+.blog-meta a:last-child:before {
+    display: block;
+}
+.blog-meta span::before, .blog-meta a::before {
+	right: -11px;
+}
+.recent-post .media-img {
+	margin-right: 0;
+	margin-left: 15px;
+}

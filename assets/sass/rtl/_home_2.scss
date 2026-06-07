@@ -1,0 +1,68 @@
+
+.hero-2-right-main {
+	left: 0;
+	right: inherit;
+    padding-right: 20px;
+	border-radius: 0 500px 500px 0;
+}
+.hero-2-right-main img {
+	border-radius: 0 500px 500px 0;
+}
+.hero-2-logo-shape {
+	left: 42%;
+	right: inherit;
+    @include xl {
+        display: none;
+    }
+}
+.img-box2 .img2::before {
+	left: inherit;
+	right: -21px;
+}
+.about-2-logo-shape {
+	margin-right: -77px;
+	margin-left: inherit;
+}
+
+.contact-2-video-btn {
+	left: 350px;
+	right: inherit;
+}
+
+
+@include xxl {
+    
+}
+
+@include ml {
+	.contact-2-video-btn {
+		left: 160px;
+		right: inherit;
+	}
+
+}
+
+@include xl {
+	.contact-2-video-btn {
+		left: 140px;
+		right: inherit;
+	}
+}
+
+@include lg {
+}
+
+@include md {
+}
+
+@include sm {
+
+}
+
+@include xs {
+
+}
+
+@include vxs {
+
+}

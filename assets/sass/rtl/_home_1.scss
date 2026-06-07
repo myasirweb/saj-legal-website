@@ -1,0 +1,127 @@
+.hero-img-shape-1 {
+	left: 40.3%;
+    right: inherit;
+}
+@media (max-width: 1750px) {
+    .hero-img-shape-1 {
+        left: 38.3%;
+        right: inherit;
+    }
+}
+@include ml {
+    .hero-img-shape-1 {
+        left: 35%;
+        right: inherit;
+    }
+
+}
+.img-box1.about-1 .logo-shape {
+    left: 45%;;
+}
+
+.team-1-card-wrap {
+	margin-left: -51%;
+	position: relative;
+	margin-right: 0;
+}
+.team-1-card-wrap .slider-arrow.slider-prev {
+	left: 14%;
+    @media (max-width: 1850px) {
+        left: 17%;
+    }
+
+    @media (max-width: 1770px) {
+        left: 20%;
+    }
+
+    @media (max-width: 1870px) {
+        left: 23%;
+    }
+
+    @media (max-width: 1630px) {
+        left: 25%;
+    }
+
+    @media (max-width: 1560px) {
+        left: 28%;
+    }
+
+    @media (max-width: 1470px) {
+        left: 30%;
+    }
+
+    @media (max-width: 1370px) {
+        left: 32%;
+    }
+}
+.team-1-card-wrap .slider-arrow.slider-next {
+	left: auto;
+	right: -3%;
+}
+.process-thumb {
+	margin-right: -240px;
+}
+.process-bottom-item::before {
+	right: 27px;
+}
+.testi-block {
+	border-radius: 50px 24px 24px 24px;
+}
+.testi-block .testi-icon-1-top {
+	left: 0px;
+    right: inherit;
+    border-radius: 50px 0;
+}
+.contact_1-man {
+	left: 30px;
+	right: inherit;
+}
+.info-box_icon {
+	margin-left: 15px;
+	margin-right: 0;
+}
+
+@include xxl {
+
+}
+
+@include ml {
+
+}
+
+@include xl {
+
+}
+
+@include lg {
+    .img-box1.about-1 .logo-shape {
+        left: 56%;
+    }
+    .process-thumb {
+        margin-right: 0px;
+    }
+    
+}
+
+@include md {
+    .img-box1.about-1 .logo-shape {
+        left: 40%;
+    }
+    .team-1-card-wrap {
+        margin-left: 0;
+    }
+}
+
+@include sm {
+
+}
+
+@include xs {
+
+}
+
+@include vxs {
+
+}
+
+

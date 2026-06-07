@@ -1,0 +1,24 @@
+.about-5-imgbox .img2-sub {
+	left: 10%;
+	right: inherit;
+}
+.about-5-logo-shape {
+	left: 20%;
+	right: inherit;
+}
+.about-6-imgbox::before {
+	left: 8px;
+	right: inherit;
+}
+
+@include sm {
+
+}
+
+@include xs {
+
+}
+
+@include vxs {
+
+}

@@ -1,0 +1,131 @@
+/* Counter 1 ---------------------------------- */
+.counter-sec1 {
+    position: relative;
+    z-index: 2;
+}
+
+.counter-card {
+    --border-color: #D4D4D4;
+
+    &-wrap {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        padding: 80px;
+        background: var(--theme-color);
+        border-radius: 24px;
+        align-items: center;
+
+        @media (max-width: 1550px) {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        @include md {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        @include sm {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .divider {
+            width: 1px;
+            height: 60px;
+            background-color: #ffffff28;
+
+            @include lg {
+                display: none;
+            }
+        }
+
+        .divider:last-of-type {
+            display: none;
+        }
+    }
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    .box-number {
+        color: var(--white-color);
+        font-weight: 500;
+        margin-top: -0.12em;
+        font-family: var(--body-font);
+        font-size: 36px;
+        margin-bottom: 0;
+        line-height: .9;
+
+        .counter-number {
+            font-weight: var(--title-font);
+        }
+
+        @include lg {
+            font-size: 30px;
+        }
+
+        @include xs {
+            font-size: 25px;
+        }
+
+        .plus-simple {
+            font-weight: 250;
+            margin-left: -6px;
+            font-size: 34px;
+
+            @include xs {
+                font-size: 28px;
+                margin-left: -3px;
+            }
+        }
+    }
+
+    .box-text {
+        font-size: 16px;
+        color: $white-color;
+    }
+
+    .media-body {
+        flex: 1;
+    }
+}
+
+
+@include md {
+    .counter-card {
+        flex: 50%;
+        width: 200px;
+    }
+
+    .counter-card-wrap {
+        flex-wrap: wrap;
+        gap: 30px 0;
+    }
+}
+
+
+@media (max-width: 470px) {
+    .counter-card-wrap {
+        flex-direction: column;
+    }
+
+    .counter-card {
+        flex: 100%;
+    }
+}
+
+/* Counter  2 ---------------------------------- */
+.counter-sec2 {
+    background: var(--theme-color);
+}
+
+.counter-card-wrap {
+    &.style-2 {
+        border-radius: 0;
+        background: transparent;
+    }
+}
+

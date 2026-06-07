@@ -1,0 +1,534 @@
+/* Service Offer  01 ---------------------------------- */
+.service-offer-wrapper {
+    padding: 0 35px;
+
+    @include sm {
+        padding: 0 20px;
+    }
+
+    .service-offer-box {
+        position: relative;
+        --duration: 120s;
+        --gap: 0px;
+        display: -ms-flexbox;
+        display: flex;
+        overflow: hidden;
+        user-select: none;
+        gap: var(--gap);
+
+        &:first-child {
+            --duration: 100s;
+        }
+
+        &:last-child {
+            --duration: 80s;
+        }
+
+        &.marquee--reverse {
+            .service-offer-group {
+                animation-direction: reverse;
+            }
+        }
+
+        .service-offer-group {
+            -ms-flex-negative: 0;
+            flex-shrink: 0;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -ms-flex-pack: distribute;
+            justify-content: space-around;
+            gap: var(--gap);
+            min-width: 100%;
+            animation: scroll var(--duration) linear infinite;
+
+            .text {
+                font-family: $title-font;
+                font-weight: 700;
+                font-size: 36px;
+                line-height: 1.27px;
+                text-align: center;
+                letter-spacing: 0.02em;
+                text-transform: capitalize;
+                color: $white-color;
+                padding: 64px 0 57px;
+                display: inline-block;
+                cursor: pointer;
+                transition: all 0.4s ease-in-out;
+
+                A {
+                    color: $white-color;
+                }
+
+                @include sm {
+                    font-size: 28px;
+                    padding: 58px 0 48px;
+                }
+
+                @include xs {
+                    font-size: 24px;
+                    padding: 58px 0 48px;
+                }
+
+                img {
+                    margin: 0 28px;
+
+                    @include xs {
+                        margin: 0 22px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Cta   02 ---------------------------------- */
+
+.cta-2-area {
+    .sub-title::before {
+        background: var(--theme-color2);
+    }
+
+    .sub-title::after {
+        background: var(--theme-color2);
+    }
+
+    .cta-2-bg-wrapper {
+        border-radius: 50px;
+        overflow: hidden;
+
+        @include sm {
+            border-radius: 25px;
+        }
+    }
+}
+
+.cta-box2 {
+    .title-area {
+        margin-bottom: 30px;
+        line-height: 140%;
+    }
+
+    .th-btn {
+        border: 2px solid var(--white-color);
+    }
+}
+
+.cta-2-bottom-shape {
+    height: 212px;
+    width: 212px;
+    background: transparent;
+    border-radius: 50%;
+    border: 30px solid var(--theme-color2);
+    left: 9%;
+    bottom: -137px;
+
+    @include sm {
+        width: 200px;
+        height: 200px;
+    }
+
+    @include xs {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+.cta-2-top-shape {
+    height: 212px;
+    width: 212px;
+    background: transparent;
+    border-radius: 50%;
+    border: 30px solid var(--theme-color2);
+    right: 9%;
+    top: -137px;
+
+    @include sm {
+        width: 200px;
+        height: 200px;
+    }
+
+    @include xs {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+/* Cta   03 ---------------------------------- */
+.service-offer-wrapper.style-2 {
+    .service-offer-box .service-offer-group .text {
+        padding: 85px 0 0;
+        margin: 0;
+
+        @include xs {
+            padding: 75px 0 0;
+        }
+
+        a {
+            color: var(--title-color);
+            text-transform: uppercase;
+            font-size: 84px;
+
+            @include ml {
+                font-size: 65px;
+            }
+
+            @include xl {
+                font-size: 55px;
+            }
+
+            @include lg {
+                font-size: 45px;
+            }
+
+            @include md {
+                font-size: 40px;
+            }
+
+            @include sm {
+                font-size: 32px;
+            }
+
+            @include xs {
+                font-size: 28px;
+            }
+
+            img {
+                border: 2px solid var(--theme-color2);
+                border-radius: 50%;
+                margin-top: -10px;
+
+                @include ml {
+                    width: 53px;
+                }
+
+                @include xl {
+                    width: 48px;
+                }
+
+                @include lg {
+                    width: 40px;
+                }
+
+                @include md {
+                    width: 35px;
+                }
+
+                @include sm {
+                    width: 30px;
+                    margin-top: 6px;
+                }
+
+                @include xs {
+                    width: 27px;
+                }
+
+                @include vxs {
+                    width: 25px;
+                }
+            }
+        }
+    }
+}
+
+/* Cta   04 ---------------------------------- */
+.cta-4-area-inner {
+    border-radius: 100px;
+    margin: 0 80px;
+    position: relative;
+
+    &:before {
+        border-radius: 100px;
+    }
+}
+
+@media (max-width: 1500px) {
+    .cta-4-area-inner {
+        margin: inherit;
+        border-radius: 0;
+
+        &:before {
+            border-radius: inherit;
+        }
+    }
+}
+
+.shape-mockup.cta-4-shape-lef {
+    left: 42px;
+    z-index: 1;
+    top: 0;
+    height: 100%;
+
+    img {
+        height: 100%;
+    }
+
+    @media (max-width: 1650px) {
+        left: 0px;
+    }
+
+    @include ml {
+        left: -85px;
+    }
+
+    @include lg {
+        display: none;
+    }
+}
+
+.shape-mockup.cta-4-shape-right {
+    z-index: 1;
+    right: -10px;
+    top: 0;
+
+    @media (max-width: 1650px) {
+        right: -60px;
+    }
+
+    @include ml {
+        right: -185px;
+    }
+
+    @include lg {
+        display: none;
+    }
+}
+
+.cta-box4 {
+    .title-area {
+        margin-bottom: 35px;
+
+        .box-title {
+            font-size: 54px;
+            line-height: 1.19;
+
+            @include xl {
+                font-size: 45px;
+            }
+
+            @include lg {
+                font-size: 32px;
+            }
+
+            @include md {
+                font-size: 28px;
+            }
+        }
+
+        .box-text {
+            color: #A1A6B0;
+            max-width: 76%;
+            margin: 0 auto 0px;
+        }
+    }
+}
+@include md {
+    .cta-box4 .title-area .box-text {
+        max-width: 90%;
+    }
+}
+@include sm {
+    .cta-box4 .title-area .box-text {
+        max-width: 100%;
+    }
+}
+
+//---------------------------------------
+.offer-card {
+    padding: 70px 40px;
+    border-radius: 30px;
+    background-position: top left;
+
+    @include xs {
+        padding: 55px 40px;
+        border-radius: 20px;
+    }
+
+    @include vxs {
+        padding: 40px 20px;
+    }
+
+    .box-subtitle {
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: -0.4em;
+        margin-bottom: 20px;
+        display: block;
+    }
+
+    .box-title {
+        font-size: 30px;
+        line-height: 40px;
+        font-weight: 700;
+        margin-bottom: 33px;
+
+        @include vxs {
+            font-size: 26px;
+        }
+    }
+}
+
+//--------------------------------------------
+.offer-box {
+    padding: 40px 30px;
+    border-radius: 20px;
+    background-position: left center;
+
+    .box-subtitle {
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: uppercase;
+        line-height: 24px;
+        padding: 0 13px;
+        margin-bottom: 21px;
+        border-radius: 99px;
+        display: inline-block;
+        background-color: $theme-color2;
+        color: $white-color;
+    }
+
+    .box-title {
+        margin-bottom: 23px;
+    }
+}
+
+
+//---------------------------------------
+.offer-grid {
+    padding: 40px 30px 40px 30px;
+    border-radius: 20px;
+    background-position: top left;
+    height: 100%;
+
+    .box-subtitle {
+        font-size: 18px;
+        font-weight: 500;
+        margin-top: -0.4em;
+        margin-bottom: 20px;
+        display: block;
+    }
+
+    .box-title {
+        font-weight: 700;
+        margin-bottom: 33px;
+    }
+}
+
+//---------------------------------------
+.offer-block {
+    padding: 27px 40px 40px 40px;
+    border-radius: 30px;
+    background-color: $smoke-color2;
+
+    .box-img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 2;
+
+        @include sm {
+            max-width: 55%;
+        }
+    }
+
+    .box-subtitle {
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-top: -0.36em;
+        margin-bottom: 16px;
+        display: block;
+        color: $theme-color;
+    }
+
+    .box-heading {
+        display: block;
+        font-family: $title-font;
+        font-size: 20px;
+        font-weight: 300;
+        color: $theme-color;
+        margin-bottom: 10px;
+        margin-top: -0.4em;
+    }
+
+    .box-title {
+        font-size: 36px;
+        font-weight: 300;
+        margin-bottom: 0;
+        position: relative;
+        z-index: 3;
+
+        b {
+            font-weight: 700;
+        }
+    }
+
+    .box-text {
+        margin-bottom: 22px;
+        position: relative;
+        z-index: 3;
+    }
+
+    .box-content {
+        position: relative;
+        padding: 35px;
+        border: 5px solid $white-color;
+        border-radius: 15px;
+        box-sizing: border-box;
+
+        &:after {
+            content: '';
+            position: absolute;
+            right: -5px;
+            bottom: -5px;
+            height: 70%;
+            width: 80%;
+            border-bottom: 5px solid $border-color;
+            border-right: 5px solid $border-color;
+            border-radius: 0 0 15px 0;
+        }
+    }
+
+    .box-shape {
+        position: absolute;
+        inset: 0;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+@include xs {
+    .offer-block {
+        padding: 30px;
+        border-radius: 20px;
+
+        .box-img {
+            max-width: 50%;
+        }
+
+        .box-subtitle {
+            margin-bottom: 12px;
+        }
+
+        .box-content {
+            padding: 15px;
+            border: 3px solid $white-color;
+        }
+    }
+}
+
+@include vxs {
+    .offer-block {
+        padding: 25px;
+
+        .box-title {
+            font-size: 30px;
+        }
+    }
+}

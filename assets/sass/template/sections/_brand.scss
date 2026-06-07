@@ -1,0 +1,51 @@
+/* Brand 1 ---------------------------------- */
+.process-play-btn-wrap {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.brand-area-1 {
+    padding: 60px 0;
+    background-color: var(--theme-color2);
+}
+
+.brand-box {
+    margin: 3px;
+    text-align: center;
+
+    img {
+        padding: 0 5px;
+        width: 105px;
+        transition: all 0.4s ease-in-out;
+        cursor: pointer;
+    }
+
+    &:hover img {
+        transform: scale(1.04);
+    }
+}
+
+/* Brand 2 ---------------------------------- */
+.brand-bg-wrap.style-2 {
+    margin-top: 0;
+}
+
+/* Brand 3 ---------------------------------- */
+
+.brand-3-sec {
+    padding: 60px 0;
+}
+
+.brand-3-sec .brand-box img {
+    filter: brightness(0) invert(1);
+}
+
+.brand-1-top .box-title {
+    font-size: 36px;
+
+    @include sm {
+        font-size: 24px;
+    }
+}
