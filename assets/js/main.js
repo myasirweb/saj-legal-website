@@ -34,28 +34,22 @@
     ==================================*/
     /*
 
-  /*---------- 01. On Load Function ----------*/
-$(window).on("load", function () {
-    // If screen width is less than 768px (mobile)
-    if ($(window).width() < 768) {
-        $(".preloader").hide(); // don't show loader
-        return;
-    }
-
-    // Desktop behavior (show loader)
-    setTimeout(function () {
-        $(".preloader").fadeOut();
-    }, 0);
-});
-
-/*---------- 02. Preloader Close ----------*/
+  /*---------- 01. Preloader ----------*/
+// The preloader markup was removed from the pages (the loader GIF was ~540 KB
+// and only flashed briefly). This guard keeps things working if any page still
+// ships a `.preloader` element.
 if ($(".preloader").length > 0) {
-    $(".preloaderCls").each(function () {
-        $(this).on("click", function (e) {
-            e.preventDefault();
-            $(".preloader").css("display", "none");
-        });
+    $(window).on("load", function () {
+        $(".preloader").fadeOut(300);
     });
+    $(".preloaderCls").on("click", function (e) {
+        e.preventDefault();
+        $(".preloader").css("display", "none");
+    });
+    // Safety: never let a stuck preloader hide the site.
+    setTimeout(function () {
+        $(".preloader").fadeOut(300);
+    }, 4000);
 }
 
     /*---------- 03. Mobile Menu ----------*/
