@@ -478,35 +478,39 @@ if ($(".preloader").length > 0) {
 
     function validateContact() {
         var valid = true;
-        var formInput;
+        var fields = $validation.split(",");
 
-        function unvalid($validation) {
-            $validation = $validation.split(",");
-            for (var i = 0; i < $validation.length; i++) {
-                formInput = form + " " + $validation[i];
-                if (!$(formInput).val()) {
-                    $(formInput).addClass(invalidCls);
-                    valid = false;
-                } else {
-                    $(formInput).removeClass(invalidCls);
-                    valid = true;
-                }
+        for (var i = 0; i < fields.length; i++) {
+            var formInput = form + " " + fields[i];
+            var $field = $(formInput);
+
+            // Skip rules for fields that aren't present on this page's form
+            // (e.g. the contact page form has no subject/number inputs).
+            if ($field.length === 0) {
+                continue;
+            }
+
+            if (!$field.val()) {
+                $field.addClass(invalidCls);
+                valid = false;
+            } else {
+                $field.removeClass(invalidCls);
             }
         }
-        unvalid($validation);
 
-        if (
-            !$($email).val() ||
-            !$($email)
-                .val()
-                .match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/)
-        ) {
-            $($email).addClass(invalidCls);
-            valid = false;
-        } else {
-            $($email).removeClass(invalidCls);
-            valid = true;
+        var $emailField = $(form + " " + $email);
+        if ($emailField.length) {
+            if (
+                !$emailField.val() ||
+                !$emailField.val().match(/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/)
+            ) {
+                $emailField.addClass(invalidCls);
+                valid = false;
+            } else {
+                $emailField.removeClass(invalidCls);
+            }
         }
+
         return valid;
     }
 

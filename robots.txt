@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://www.saj.legal/sitemap.xml
+Sitemap: https://saj.legal/sitemap.xml
